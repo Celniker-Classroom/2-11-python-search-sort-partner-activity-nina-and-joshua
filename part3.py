@@ -7,7 +7,7 @@ def make_list():
     print("The list is: " + str(ranNums))
 
 
-searchNumber = input("Enter a number between 1 and 50.")
+searchNumber = input("Enter a number between 1 and 50: ")
 
 def find_smallest():
     smallest=min(ranNums)
@@ -22,8 +22,17 @@ def find_sum():
     for i in ranNums:
         sum = sum + i
     print("The sum is "+ str(sum))
-
+def reverse_list():
+    ranNums.reverse()
+    print(ranNums)
+def remove_duplicates():
+    set(ranNums)
+    print(ranNums)
 make_list()
 find_smallest()
 find_biggest()
 find_sum()
+ranNums.sort()
+print(ranNums)
+reverse_list()
+remove_duplicates()
