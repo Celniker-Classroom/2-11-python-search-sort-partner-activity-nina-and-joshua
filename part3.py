@@ -12,3 +12,8 @@ print("The list is: " + str(ranNums))
 
 
 searchNumber = input("Enter a number between 1 and 50.")
+
+def find_smallest():
+    smallest=min(ranNums)
+    print(smallest)
+find_smallest()
