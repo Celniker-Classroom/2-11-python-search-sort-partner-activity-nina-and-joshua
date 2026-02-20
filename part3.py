@@ -1,19 +1,29 @@
 from random import randint
 
-
 ranNums = [] #name your list and make sure it is empty!
-
-
-# Generates a list of 5 or 10 random integers between 1 and 50 inclusive.
-for i in range(10): 
-    ranNums.append(randint(1, 50))
-
-print("The list is: " + str(ranNums))
+def make_list():
+    for i in range(10): 
+        ranNums.append(randint(1, 50))
+    print("The list is: " + str(ranNums))
 
 
 searchNumber = input("Enter a number between 1 and 50.")
 
 def find_smallest():
     smallest=min(ranNums)
-    print(smallest)
+    print("The smallest number is "+ str(smallest))
+
+def find_biggest():
+    biggest = max(ranNums)
+    print("The largest number is " + str(biggest))
+
+def find_sum():
+    sum = 0
+    for i in ranNums:
+        sum = sum + i
+    print("The sum is "+ str(sum))
+
+make_list()
 find_smallest()
+find_biggest()
+find_sum()
